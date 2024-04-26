@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="htstps://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <meta property="og:title" content="경소고 급식 조회사이트">
+    <meta property="og:site_name" content="경소고 급식 조회사이트">
+    <meta property="og:url" content="https://gbswschoollunch.netlify.app">
+    <meta property="og:description" content="경북소프트웨어고등학교의 급식을 조회할수있는 사이트">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://file.gamejob.co.kr/net/Corp/CoImage/LogoView?FN=2021\6\GJ_CoLogo_34814220.jpg">
+    <title>경소고 급식</title>
+</head>
+<body>
+    <img src="logo.png" alt="">
+    <div class="box">
+        <span>오늘은 </span><span id="day" class="big"></span><span class="big">월</span><span></span><span id="day2" class="big"></span><span class="big">일</span><span>입니다</span><br>
+        <span id="sertop"></span><span id="sertext"> 의 급식을 조회하였습니다</span>
+        <div class="foodbox">
+            <h1>조식</h1>
+            <p id="foodbox1"></p>
+        </div>
+
+        <div class="foodbox">
+            <h1>중식</h1>
+            <p id="foodbox2"></p>
+        </div>
+
+        <div class="foodbox">
+            <h1>석식</h1>
+            <p id="foodbox3"></p>
+        </div>
+        <input type="date" id="date">
+        <button onclick="serbab()" id="serbab">조회하기</button>
+    </div>
+    <p>Made By 강백호</p>
+    <p>made in 2024/4/25</p>
+    <p>날짜를 선택하지 않고 조회하기를 누르면 2021-03-03 의 급식이 조회됩니다</p>
+    <script src="app.js"></script>
+</body>
+</html>
